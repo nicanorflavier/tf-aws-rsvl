@@ -1,5 +1,5 @@
 # This backend configuration instructs Terraform to store its state in an S3 bucket.
-
+/**
 terraform {
 
   backend "s3" {
@@ -11,3 +11,4 @@ terraform {
   }
 }
 
+**/
