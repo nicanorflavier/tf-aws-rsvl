@@ -1,9 +1,9 @@
 #Define the S3 bucket to store the terraform state files
 resource "aws_s3_bucket" "tf_state_bucket" {
-  bucket  = "${var.environment_name}-${var.bucket_name}"
+  bucket = "${var.environment_name}-${var.bucket_name}"
   #force_destroy = true
   tags = {
-	  Name = var.bucket_name
+    Name = var.bucket_name
   }
 }
 
